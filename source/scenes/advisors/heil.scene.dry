@@ -1,20 +1,20 @@
-title: Theodor Leipart
+title: Hubertus Heil
 is-pinned-card: true
 tags: advisor, labor
-card-image: img/portraits/LeipartTheodor.jpg
-view-if: leipart_advisor = 1
+card-image: img/portraits/HubertusHeil.jpg
+view-if: heil_advisor = 1
 new-page: true 
 
-= Theodor Leipart
+= Hubertus Heil
 
-Leipart is a leader of the ADGB, the largest federation of <span style="color: #c00000;">socialist</span> trade unions.
+Heil is the incumbent minister of Labour and Social Affairs.
 
 - @organizing
 - @depression
 - @schleicher
 - @root: Return to main
 
-# leipart was one of the people who argued for union independence
+# Heil was one of the people who argued for union independence
 #- @union_unity
 
 @organizing
