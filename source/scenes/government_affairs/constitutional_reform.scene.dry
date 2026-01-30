@@ -13,45 +13,45 @@ tags: govt_affairs, cabinet
 
 # alternatively, a constitutional referendum can be initiated, that requires a simple majority of voters to pass (as I understand article 76). This should depend on support for the republic and for democracy, and the relationships with the other parties (more similar to the presidential election).
 
-= Constitutional Reform
+= Constitutional Action
 
 # the ideas for constitutional reform here are based on the bundesrepublik basic law... I'm not sure if it's totally realistic to what someone like Mierendorff would've wanted.
 
 Many neorevisionists consider the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Constitution to be inadequate. They believe that the clauses of the constitution are in part responsible for the instability of the country, and must change in order to build a more stable democratic republic. Ideas from both <span style="color: #c00000;">socialists</span> and <span style="color: #D3C24D;">liberals</span>.
 
-A constitutional reform requires either a two-thirds supermajority in the Reichstag, or a constitutional referendum with support from a majority of the electorate. If we do not have a supermajority in the Reichstag, we must be assured of strong support from the other parties for the constitutional referendum.
+A constitutional reform requires either a two-thirds supermajority in the bundestag, or a constitutional referendum with support from a majority of the electorate. If we do not have a supermajority in the Reichstag, we must be assured of strong support from the other parties for the constitutional referendum.
 
 @reforms_menu
 
 - @vote_threshold: Change the vote threshold.
-- @constructive_vonc: Ban non-constructive votes of no confidence.
-- @presidential_powers: Reduce presidential powers.
+- @ban_linke: Legally declare Die Linke an anti-democratic party
+- @ban_afd: Legally declare the AfD an anti-democratic party
 - @as_is: Do not pursue constitutional reform.
 - @easy_discard
 - @cancel_advisor_action
 #- @constitutional_bans: Allow the banning of anti-constitutional parties.
 
 @vote_threshold
-subtitle: Change the vote threshold to 5% for parties to be represented in the Reichstag.
+subtitle: Change the vote threshold to 10% for parties to be represented in the Bundestag.
 on-arrival: {!
 Q.reform_support = Q.spd_normalized;
-if (Q.z_relation > 30) {
-    Q.reform_support += Q.z_normalized - 0.03;
+if (Q.cducsu_relation > 30) {
+    Q.reform_support += Q.cducsu_normalized - 0.03;
 }
-if (Q.kpd_relation > 50 && Q.kpd_normalized >= 0.1) {
-    Q.reform_support += Q.kpd_normalized;
+if (Q.linke_relation > 50 && Q.linke_normalized >= 0.1) {
+    Q.reform_support += Q.linke_normalized;
 }
-if (Q.nsdap_normalized >= 0.2 ) {
-    Q.reform_support += Q.nsdap_normalized;
+if (Q.afd_normalized >= 0.2 ) {
+    Q.reform_support += Q.afd_normalized;
 }
 !}
 view-if: electoral_threshold = 0
 
-# The left is opposed to this.
+# Die Linke is opposed to this.
 
-Some political thinkers believe that the proliferation of minor parties is responsible for the instability of the republic. They believe that a higher electoral threshold will reduce the influence of small radical parties. Parties that win a plurality in a constituency will maintain their representation, a gift to regional parties such as the <span style="color: #A2D8E0;">**BVP**</span>. 
+Some political thinkers believe that the proliferation of minor parties is responsible for the instability of the republic. They believe that a higher electoral threshold will reduce the influence of small radical parties. Parties that win a plurality in a constituency will maintain their representation, a gift to regional parties such as the <span style="color: #A2D8E0;">**CSU**</span> and <span style="color: #A2D8E0;">**SSW**</span>. 
 
-The smaller parties will obviously oppose this reform. [? if z_relation > 30 : The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] supports this reform, while their <span style="color: #A2D8E0;">**BVP**</span> partners oppose it. ?] [? if kpd_relation > 50 and kpd_normalized >= 0.1 : Perhaps surprisingly, the <span style="color: #700000;">**KPD**</span> supports this reform. ?] [? if nsdap_normalized >= 0.2 : The <span style="color: #7A3C00;">**NSDAP**</span> supports this reform, as they believe they have something to gain. ?]
+The smaller parties will obviously oppose this reform. [? if cducsu_relation > 30 : The [? if cducsu_party_name != "CDU/CSU": <span style="color: #000000;">Union Parties</span>?][? if cducsu_party_name == "CDU": <span style="color: #000000;">**CDU**</span>?] supports this reform, while their <span style="color: #A2D8E0;">**CSU**</span> partners oppose it. ?] [? if kpd_relation > 50 and linke_normalized >= 0.1 : Perhaps surprisingly, <span style="color: #700000;">**Die Linke**</span> supports this reform. ?] [? if afd_normalized >= 0.2 : The <span style="color: #7A3C00;">**NSDAP**</span> supports this reform, as they believe they have something to gain. ?]
 
 The <span style="color: #c00000;">**SPD**</span> Left opposes this change, as they believe it to be anti-democratic.
 
