@@ -1,12 +1,12 @@
-title: Confronting the Nazis
+title: Confronting the AfD
 new-page: true
 is-card: true
-view-if: (nsdap_r >= 10 and nazi_urgency > 1) and confronting_nazis_timer == 0 and iron_front_formed == 0
+view-if: (afd_r >= 10 and nazi_urgency > 1) and confronting_nazis_timer == 0 and iron_front_formed == 0
 on-arrival: confronting_nazis_seen += 1; confronting_nazis_timer = 5; month_actions += 1; month_actions -= 1 if harzburg_front_time = time;
 card-image: img/iron_front.png
 tags: party_affairs; antifascism
 
-# Forming the Iron Front
+# Forming the Republican Front
 
 The <span style="color: #7A3C00;">Nazis</span>' strength is gaining, as shown by their recent election results and their violent presence in the streets. Their <span style="color: #7A3C00;">fascism</span> threatens to plunge Germany once again into the abyss.
 
