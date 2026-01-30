@@ -1,4 +1,4 @@
-title: War Guilt Inquiry
+title: CumEX-Files Inquiry
 new-page: true
 is-card: true
 tags: govt_affairs
@@ -7,7 +7,7 @@ view-if: spd_in_government = 1 and war_guilt_timer = 0
 card-image: img/reichstag_1.jpg
 max-visits: 1
 
-= Reichstag War Guilt Inquiry
+= CumEx-Files Inquiry
 
 The War Guilt Inquiry has been an intermittent Reichstag committee for investigating the causes of the Great War and the German defeat. So far, it has faced massive resistance from the military establishment[? if president == "Hindenburg":&nbsp;up to President Hindenburg?].
 
