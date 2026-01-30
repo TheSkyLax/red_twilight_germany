@@ -1,13 +1,13 @@
-title: Max Seydewitz
+title: Kevin Kuhnert
 is-pinned-card: true
 tags: advisor, left
-card-image: img/portraits/SeydewitzMax.jpg
-view-if: seydewitz_advisor = 1
+card-image: img/portraits/KevinKuhnert.jpg
+view-if: kuhnert_advisor = 1
 new-page: true 
 
-= Max Seydewitz
+= Kevin Kuhnert
 
-Max Seydewitz is a former leader of the youth wing, current supporter of the left wing of the <span style="color: #c00000;">**SPD**</span>, and advocates for class struggle.
+Kevin Kuhnert is a former leader of the SPD youth wing "Jusos" and a leading voice of the the left wing of the <span style="color: #c00000;">**SPD**</span>.
 
 - @class_struggle
 - @socialist_youth
