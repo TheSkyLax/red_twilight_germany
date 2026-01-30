@@ -73,7 +73,7 @@ Prussian Minister-President: [? if prussia_leader = "Braun" and (chancellor != n
 
 Reichstag composition:
 
-# 1928: 30, 1930: 25, 1932: 22
+# 2021: 30, 2025: 25, 2029: 22
 
 [? if dnef_formed: <span class="tooltip-text" title="German National Unity Front" style="color: #BFC8CC;">**DNEF**</span>: [+ dnef_r +]% ?]
 <span class="tooltip-text" title="Social Democratic Party of Germany" style="color: #c00000;">**SPD**</span>: [+ spd_r +]%
